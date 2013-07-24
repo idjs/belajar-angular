@@ -24,7 +24,7 @@ Belajar AngularJS
   
 > "HTML Enhanced for Web apps!"
 
-Maksud dari tagline ini AngularJS hanyalah HTML yang dipermak (ditingkatkan fungsinya) untuk membangun web app. 
+Maksud dari tagline ini AngularJS merupakan HTML yang ditingkatkan fungsinya untuk membangun web app. 
   Melihat sejarah kemunculan HTML, awalnya HTML hanya digunakan untuk membuat dokumen statis (website) bukan untuk membuat web app. Nah, sekarang bayangkan kalau sejak awal HTML memang dikembangkan untuk membuat web app, seperti itulah konsep AngularJS.
 
   AngularJS bukan merupakan pustaka (library) javascript melainkan sebuah framework yang solid untuk membangun web app, seperti framework javascript pada umumnya AngularJS mengadopsi konsep MVC (Model, View, Controller), meskipun menggunakan implementasi yang berbeda dengan konsep asli MVC. Agar tujuan dari MVC ini tercapai, yaitu pemisahan tugas masing-masing komponen, AngularJS memiliki `Model`, `View`, dan `Controller` yang saling berinteraksi. Berikut beberapa filosofi dalam AngularJS:
