@@ -105,8 +105,7 @@ Maksud dari tagline ini AngularJS hanyalah HTML yang dipermak (ditingkatkan fung
     
     **Keterangan:**
     1. Terdapat satu model yaitu 'nama'.
-    2. Scope digunakan untuk mengirimkan nilai 'nama' dari kontroller (lihat $scope.nama) ke View.
-    3. Pada View kita memiliki beberapa deklarasi
+    2. Pada View kita memiliki beberapa deklarasi
     
       - `<html ng-app>`, menginstruksikan angular untuk melakukan inisialisasi app
 
@@ -129,3 +128,4 @@ Maksud dari tagline ini AngularJS hanyalah HTML yang dipermak (ditingkatkan fung
 **Keterangan:**
 
 1. `MyCtrl` merupakan `controller`, dan memiliki `scope` tersendiri. Pada controller ini Model `nama` diberi nilai awal 'World', agar `Model` bisa diakses oleh `View` maka kita rekatkan dengan `Scope` seperti ini `$scope.nama = "World"`;
+2. Scope digunakan untuk mengirimkan nilai 'nama' dari kontroller (lihat $scope.nama) ke View.
