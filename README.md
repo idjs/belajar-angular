@@ -30,10 +30,10 @@ Maksud dari tagline ini AngularJS merupakan HTML yang ditingkatkan fungsinya unt
   AngularJS bukan merupakan pustaka (library) javascript melainkan sebuah framework yang solid untuk membangun web app, seperti framework javascript pada umumnya AngularJS mengadopsi konsep MVC (Model, View, Controller), meskipun menggunakan implementasi yang berbeda dengan konsep asli MVC. Agar tujuan dari MVC ini tercapai, yaitu pemisahan tugas masing-masing komponen, AngularJS memiliki `Model`, `View`, dan `Controller` yang saling berinteraksi. Berikut beberapa filosofi dalam AngularJS:
   1. View haruslah deklaratif
   
-  Elemen-elemen pada `View` harus memiliki arti yang jelas dan bersih dari kode logika.
+  Elemen-elemen pada `View` harus memberikan arti yang jelas dan bersih dari kode logika.
   2. Controller bersifat imperatif (logika)
   
-  Semua kode pemrosesan dan logika dihandle dan dituangkan di dalam `Controller` sebelum dikirim hasilnya ke `View`.
+  Kode pemrosesan dan logika dihandle dan dituangkan di dalam `Controller` sebelum dikirim hasilnya ke `View`.
   
 ## Apa yang membuat AngularJS istimewa?
 ### Two way data-binding 
@@ -53,7 +53,7 @@ Maksud dari tagline ini AngularJS merupakan HTML yang ditingkatkan fungsinya unt
 ## Key Concept AngularJS  
   - **Model**
   
-    `Model` pada AngularJS tidak memiliki konstruktor tersendiri dan tidak memerlukan inheritance dari Object Class. Model tidak memerlukan setter atau getter method khusus. Model bisa berupa primitive, object hash, atau full object. Dengan kata lain Model hanyalah javascript object biasa.
+    Dalam pola MVC, `Model` merepresentasikan suatu set data yang digunakan oleh `Controller` dan `View`.`Model` dapat mendeteksi perubahan data dan memberikan notifikasi perubahan tersebut ke `Controller` dan `View`. Pada implementasi pasif, notifikasi perubahan dapat diabaikan. Untuk membuat `Model` di beberapa framework selain AngularJS diperlukan konstruktor khusus. Sedangkan `Model` pada AngularJS tidak memiliki konstruktor tersendiri dan tidak memerlukan inheritance dari Object Class tertentu. Model tidak memerlukan setter atau getter method khusus. Model bisa berupa primitive, object hash, atau full object. Dengan kata lain Model hanyalah javascript object biasa.
 
   - **Scope ($scope)**
   
@@ -61,7 +61,7 @@ Maksud dari tagline ini AngularJS merupakan HTML yang ditingkatkan fungsinya unt
 
   - **Controller**
   
-    `Controller` merupakan kode dibalik `View`. Semua kode pemrosesan dan logika ditaruh pada controller yang akan menghasilkan `Model` untuk ditampilkan pada `View`.
+    `Controller` merupakan kode dibalik `View`. Kode pemrosesan dan logika ditaruh pada controller yang akan menghasilkan `Model` untuk ditampilkan pada `View`.
 
   - **View**
   
@@ -128,4 +128,4 @@ Maksud dari tagline ini AngularJS merupakan HTML yang ditingkatkan fungsinya unt
 **Keterangan:**
 
 1. `MyCtrl` merupakan `controller`, dan memiliki `scope` tersendiri. Pada controller ini Model `nama` diberi nilai awal 'World', agar `Model` bisa diakses oleh `View` maka kita rekatkan dengan `Scope` seperti ini `$scope.nama = "World"`;
-2. Scope digunakan untuk mengirimkan nilai 'nama' dari kontroller (lihat $scope.nama) ke View.
+2. Scope digunakan untuk mengirimkan nilai 'nama' dari controller (lihat $scope.nama) ke View.
