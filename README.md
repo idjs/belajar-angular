@@ -1,7 +1,7 @@
 Belajar AngularJS
 ====
 ----
-![](img/angular-shield.png)
+![](img/angularjs.png)
 
 ## Dasar-dasar AngularJS
 - [Apa itu AngularJS?](#apa-itu-angularjs)
